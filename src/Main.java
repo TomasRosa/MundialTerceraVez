@@ -1,5 +1,6 @@
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Main
 {
@@ -40,6 +41,7 @@ public class Main
         }
         System.out.println("Integrantes de la federacion antes de borrar: ");
         federacionArgentina.mostrar();
+
         try
         {
             federacionArgentina.quitar(m2);
@@ -51,7 +53,9 @@ public class Main
         System.out.println("Integrantes de la federacion luego de borrar: ");
         federacionArgentina.mostrar();
         System.out.println("Exportando a JSON....");
-        
+        System.out.println("Integrantes de la federacion ordenados por edad: ");
+        Collections.sort(federacionArgentina.getIntegrantes());
+        federacionArgentina.mostrar();
         try
         {
             federacionArgentina.exportarAJson("mi_archivo.json",federacionArgentina);

@@ -57,4 +57,8 @@ public class Futbolista extends Integrante implements Jugar
         System.out.println("Futbolista jugando partido...");
     }
 
+    @Override
+    public int compareTo(Integrante o) {
+        return this.getEdad() - o.getEdad();
+    }
 }

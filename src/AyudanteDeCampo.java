@@ -49,4 +49,9 @@ public class AyudanteDeCampo extends Integrante implements Jugar,Preparar
     {
         System.out.println("Ayudante de campo preparando entrenamiento...");
     }
+
+    @Override
+    public int compareTo(Integrante o) {
+        return this.getEdad() - o.getEdad();
+    }
 }

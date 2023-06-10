@@ -1,4 +1,4 @@
-public abstract class Integrante
+public abstract class Integrante implements Comparable<Integrante>
 {
     private String nombre;
     private String apellido;

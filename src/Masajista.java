@@ -54,4 +54,9 @@ public class Masajista extends Integrante
     {
         System.out.println("Masajista presente...");
     }
+
+    @Override
+    public int compareTo(Integrante o) {
+        return this.getEdad() - o.getEdad();
+    }
 }

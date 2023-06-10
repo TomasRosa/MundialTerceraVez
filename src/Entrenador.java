@@ -60,4 +60,9 @@ public class Entrenador extends Integrante implements Jugar,Preparar
     {
         System.out.println("Entrenador preparando entrenamiento...");
     }
+
+    @Override
+    public int compareTo(Integrante o) {
+       return this.getEdad() - o.getEdad();
+    }
 }
